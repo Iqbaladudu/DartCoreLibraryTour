@@ -86,7 +86,24 @@ void main() {
 
   /*
 
-    .... coming soon
+  Building a string
+  /> To programmatically generate a string, we can using StringBuffer. This is doesn't generate a new string object until toString() is called. The writeAll() has an optional second parameter to specify a separator 
+
+  */
+
+  var sb = StringBuffer();
+  sb 
+    ..write("StringBuffer is used for: ")
+    ..writeAll(['efficient', 'string', 'creation'], ' ')
+    ..write('.');
+  
+  var fullstring = sb.toString();
+  print(fullstring);
+
+  /*
+
+  Regular Expression
+  /> RegExp class provides the sampe capabilities as Javascript regular expression. use regular expression for efficient searching and pattern matching of string
 
   */
 }
